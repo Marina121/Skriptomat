@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Skriptomat</string>
+    <string name="nemate_ra_un_registrirajte_se">Nemate račun? <b>Registrirajte se</b></string>
+    <string name="ve_imate_ra_un_prijavite_se">Već imate račun? <b>Prijavite se</b></string>
+    <string name="sveu_ili_te_u_mostaru"><b>Sveučilište u Mostaru</b></string>
+    <string name="pretra_ivanje">Pretraživanje</string>
+    <string name="zapamti_me">Zapamti me</string>
+    <string name="odaberi">Odaberi kolegij</string>
+    <string name="save_script">Save Script</string>
+    <string name="moj_profil">Moj
+        Profil </string>
+    <string name="prijava">Prijavi se preko Google</string>
+
+</resources>

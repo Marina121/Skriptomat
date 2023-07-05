@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "198467423794",
+    "firebase_url": "https://skriptomat-5acff-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "skriptomat-5acff",
+    "storage_bucket": "skriptomat-5acff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198467423794:android:c7a2e5ec7999ada288f62b",
+        "android_client_info": {
+          "package_name": "ba.sum.fpmoz.skriptomat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198467423794-b1qfad3njpmdvhvdte9dppm9oml2pa67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAPk2dYDpt2eXlR9lqp2Rs2PDSyIBHdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198467423794-b1qfad3njpmdvhvdte9dppm9oml2pa67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/sum_logo01" />
+
+
+    <TextView
+        android:id="@+id/titleTxt2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="-41dp"
+        android:fontFamily="@font/dancing_script"
+        android:text="#jednojeSveučilište"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25sp"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            android:padding="25sp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullnameTI"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/fullnameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_baseline_account_box_24"
+                    android:hint="Ime i prezime"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01">
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullnameTI"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/emailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_baseline_mail_32"
+                    android:hint="Email"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTI"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/phoneTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_baseline_phone_android_32"
+                    android:hint="Broj telefona"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numberIndxTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullnameTI"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/numberIndx"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableStart="@drawable/ic_baseline_123_24"
+                    android:hint="Broj indexa"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imageTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneTI"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                app:hintEnabled="false">
+
+                <ImageButton
+                    android:id="@+id/addimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_baseline_add_to_photos_24" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneTI"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Potvrdi"
+                android:textColor="@color/white"
+                app:cornerRadius="10sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/border_circle"
+        tools:layout_editor_absoluteY="93dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

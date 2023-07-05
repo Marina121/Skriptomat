@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/sum_logo01" />
+
+    <TextView
+        android:id="@+id/titleTxt2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="-41dp"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:text="#jednojeSveučilište"
+        android:fontFamily="@font/dancing_script"
+        />
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/titleTxt2"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="400dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_img1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_img2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_img3" />
+
+    </ViewFlipper>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/blue"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"
+        app:labelVisibilityMode="unlabeled"
+        android:elevation="8dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:clipToPadding="false"
+        app:itemTextAppearanceActive="@style/Widget.Design.BottomNavigationView"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTxt2"
+        android:layout_marginTop="230dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/news_item" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/recyclerview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/robot" />
+
+    <ImageButton
+        android:id="@+id/sumBtn"
+        android:layout_below="@id/recyclerview"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:srcCompat="@drawable/icons8_www_36" />
+    <ImageButton
+        android:id="@+id/moodleBtn"
+        android:layout_below="@id/recyclerview"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="110dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:srcCompat="@drawable/icons8_moodle_36" />
+
+    <ImageButton
+        android:id="@+id/linkedBtn"
+        android:layout_below="@id/recyclerview"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:srcCompat="@drawable/icons8_linkedin_36__1_" />
+
+
+
+
+</RelativeLayout>

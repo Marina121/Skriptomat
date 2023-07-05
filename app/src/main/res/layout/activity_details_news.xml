@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsNewsActivity">
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
+        android:layout_alignEnd="@+id/toolbarImg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/sum_logo01" />
+
+
+    <TextView
+        android:id="@+id/titleTxt2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="-41dp"
+        android:fontFamily="@font/dancing_script"
+        android:text="#jednojeSveučilište"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUrlTv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleTxt2"
+        android:layout_marginTop="45dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/mTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgUrlTv"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Naslov"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUrlTv" />
+
+    <ScrollView
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/mTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/mAlias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@id/mTitle"
+            android:text="opis"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </ScrollView>
+
+
+</RelativeLayout>

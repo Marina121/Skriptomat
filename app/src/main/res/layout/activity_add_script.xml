@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddScriptActivity">
+
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/sum_logo01" />
+
+    <TextView
+        android:id="@+id/titleTxt2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="-41dp"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:text="#jednojeSveučilište"
+        android:fontFamily="@font/dancing_script"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/courseTil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="275dp"
+        android:hint="@string/odaberi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        >
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/courseInputTxt"
+            android:inputType="textAutoComplete"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/scriptTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/courseTil"
+        android:layout_marginTop="10dp"
+        app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/scriptInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:background="@color/white"
+                android:shadowColor="@color/blue"
+                android:hint="Naziv skripte"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray01">
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scriptTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+            app:cornerRadius="10sp"
+        android:text="Spremi"
+        android:textColor="@color/white">
+        </Button>
+
+
+    <ImageButton
+        android:id="@+id/pdfBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_add_link_24"
+        android:layout_alignEnd="@+id/toolbarImg"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-123dp"
+        android:background="@color/white"
+        />
+
+
+</RelativeLayout>

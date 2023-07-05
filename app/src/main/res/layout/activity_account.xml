@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="495dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+    <ImageView
+        android:layout_width="590dp"
+        android:layout_height="281dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/graphic" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImg"
+        android:elevation="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:src="@drawable/icons8_graduation_cap_32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular" />
+   <!-- <RelativeLayout
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/viewLl"
+            android:fontFamily="@font/dancing_script"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/viewEmailTxt"
+            android:fontFamily="@font/dancing_script"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="90dp"/>
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileData"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95sp"
+        android:layout_marginEnd="0sp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="2dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:padding="25sp">
+            <LinearLayout
+                android:id="@+id/viewFullname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/fullnameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marina Jolić"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/dancing_script"
+                    android:textSize="26dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+  <LinearLayout
+                android:id="@+id/viewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="marina.jolic@fpmoz.sum.ba"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/dancing_script"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/viewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+     <TextView
+                    android:id="@+id/phoneTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="063000000"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/dancing_script"
+                    android:textSize="18dp" />
+            </LinearLayout>
+    <LinearLayout
+                android:id="@+id/viewNumberIndx"
+                android:layout_marginBottom="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/numberIndxTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="4615/DS"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/dancing_script"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/editProfile"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    app:cornerRadius="10sp" />
+
+                <ImageButton
+                    android:id="@+id/changePassword"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_shape"
+                    android:src="@drawable/ic_baseline_key_24_white" />
+
+                <ImageButton
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_red"
+                    android:src="@drawable/ic_baseline_logout_24" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/bottom_navigator"
+           app:itemBackground="@color/blue"
+           app:itemTextColor="@drawable/selector"
+           app:itemIconTint="@drawable/selector"
+           app:menu="@menu/menu"
+           android:layout_marginTop="50dp"
+           android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Moj"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:fontFamily="@font/dancing_script"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@id/textView2"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="36dp"
+        android:text="Profil "
+        android:fontFamily="@font/dancing_script">
+
+    </TextView>
+</RelativeLayout>

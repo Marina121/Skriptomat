@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseActivity">
+
+    <ImageView
+        android:id="@+id/toolbarImg"
+        android:layout_width="395dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape_toolbar_01" />
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
+        android:layout_alignEnd="@+id/toolbarImg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/sum_logo01" />
+
+    <ImageButton
+        android:id="@+id/backBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/titleTxt2"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/toolbarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="-41dp"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:text="#jednojeSveučilište"
+        android:fontFamily="@font/dancing_script"
+        />
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTxt2"
+        android:layout_marginTop="45dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/pretra_ivanje"
+        app:defaultQueryHint="@string/pretra_ivanje"
+        app:iconifiedByDefault="false" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="402dp"
+        android:layout_height="513dp"
+        android:layout_below="@+id/toolbarImg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarImg"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/savedRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/script_view">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/blue"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
